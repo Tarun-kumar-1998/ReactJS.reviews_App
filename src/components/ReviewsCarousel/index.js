@@ -33,7 +33,7 @@ class ReviewsCarousel extends Component {
 
   onClickLeftArrow = () => {
     const {activeReviewIndex} = this.state
-
+    console.log(activeReviewIndex)
     if (activeReviewIndex > 0) {
       this.setState(prevState => ({
         activeReviewIndex: prevState.activeReviewIndex - 1,
